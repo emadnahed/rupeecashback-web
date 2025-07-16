@@ -1,0 +1,115 @@
+import React from 'react';
+import styles from './SpottedQRSection.module.css';
+import TextSpanning from './TextSpanning';
+
+const SpottedQRSection: React.FC = () => (
+  <section className={styles.section} aria-label="Spotted QR section">
+    <div className={styles.container}>
+      {/* Main Title */}
+      <div className={styles.titleWrapper}>
+        <h2 className={styles.title}>
+          <TextSpanning
+            spans={[
+              { 
+                text: "Spotted a", 
+                fontFamily: 'gilroy', 
+                fontWeight: 400
+              }
+            ]}
+          />
+          <br />
+          <TextSpanning
+            spans={[
+              { 
+                text: "RupeeCashback", 
+                fontFamily: 'gilroy', 
+                fontWeight: 400,
+                fontStyle: 'italic'
+              },
+              { 
+                text: " QR?", 
+                fontFamily: 'gilroy', 
+                fontWeight: 400
+              }
+            ]}
+          />
+        </h2>
+      </div>
+
+      {/* Phone and Steps */}
+      <div className={styles.phoneStepsContainer}>
+        {/* Phone Image */}
+        <div className={styles.phoneContainer}>
+          <img 
+            src="/CashbackQR.svg" 
+            alt="Phone showing QR scan interface" 
+            className={styles.phoneImage}
+          />
+        </div>
+
+        {/* Left Side Step */}
+        <div className={styles.stepsSection}>
+          <div className={styles.step}>
+            <h3 className={styles.stepTitle}>
+              <TextSpanning
+                spans={[
+                  { text: "Scan ", fontFamily: 'gilroy', fontWeight: 400 },
+                  { text: "it", fontFamily: 'gilroy', fontWeight: 400, fontStyle: 'italic' },
+                  { text: ".", fontFamily: 'gilroy', fontWeight: 400 }
+                ]}
+              />
+            </h3>
+          </div>
+        </div>
+
+        {/* Right Side Steps */}
+        <div className={styles.stepsSection}>
+          <div className={styles.step}>
+            <h3 className={styles.stepTitle}>
+              <TextSpanning
+                spans={[
+                  { text: "Grab", fontFamily: 'gilroy', fontWeight: 400 }
+                ]}
+              />
+              <br />
+              <TextSpanning
+                spans={[
+                  { text: "cashback", fontFamily: 'gilroy', fontWeight: 400, fontStyle: 'italic' },
+                  { text: ".", fontFamily: 'gilroy', fontWeight: 400 }
+                ]}
+              />
+            </h3>
+          </div>
+          
+          <div className={styles.step}>
+            <h3 className={styles.stepTitle}>
+              <TextSpanning
+                spans={[
+                  { text: "Walk away", fontFamily: 'gilroy', fontWeight: 400 }
+                ]}
+              />
+              <br />
+              <TextSpanning
+                spans={[
+                  { text: "richer", fontFamily: 'gilroy', fontWeight: 400, fontStyle: 'italic' },
+                  { text: ".", fontFamily: 'gilroy', fontWeight: 400 }
+                ]}
+              />
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      {/* Download QR Section - Using the complete card design */}
+      <div className={styles.downloadSection}>
+        <img 
+          src="/DownloadQR.svg" 
+          alt="Download RupeeCashback - QR code to download the app" 
+          className={styles.downloadCard}
+        />
+      </div>
+    </div>
+  </section>
+);
+
+export default SpottedQRSection; 

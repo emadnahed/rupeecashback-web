@@ -1,0 +1,49 @@
+/* Gilroy Font Classes */
+.gilroy400 {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.gilroy500 {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-weight: 500;
+  font-display: swap;
+}
+
+.gilroy600 {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-weight: 600;
+  font-display: swap;
+}
+
+.gilroy700 {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* Albra Sans Font Classes */
+.albra400 {
+  font-family: 'Albra Sans', Arial, sans-serif;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.albra500 {
+  font-family: 'Albra Sans', Arial, sans-serif;
+  font-weight: 500;
+  font-display: swap;
+}
+
+.albra600 {
+  font-family: 'Albra Sans', Arial, sans-serif;
+  font-weight: 600;
+  font-display: swap;
+}
+
+.albra700 {
+  font-family: 'Albra Sans', Arial, sans-serif;
+  font-weight: 700;
+  font-display: swap;
+} 

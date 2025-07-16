@@ -1,0 +1,294 @@
+.section {
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  padding: 80px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.titleWrapper {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0;
+  color: inherit;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 30px 25px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 320px;
+}
+
+.wideCard {
+  grid-column: 1 / -1;
+  min-height: 240px;
+  padding: 40px 30px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.iconWrapper {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconImage {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  color: #000;
+}
+
+.cardButton {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cardButton:hover {
+  background: #333;
+}
+
+.reservedSection {
+  text-align: center;
+  width: 100%;
+}
+
+.introducing {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.reservedTitle {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.reservedDescription {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 25px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.learnMoreButton {
+  background: transparent;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: underline;
+}
+
+.learnMoreButton:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .title {
+    font-size: 3.5rem;
+  }
+  
+  .section {
+    padding: 70px 30px;
+  }
+  
+  .cardsGrid {
+    max-width: 800px;
+  }
+  
+  .iconImage {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 3rem;
+  }
+  
+  .section {
+    padding: 60px 25px;
+  }
+  
+  .cardsGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .wideCard {
+    grid-column: 1;
+  }
+  
+  .card {
+    min-height: 300px;
+    padding: 25px 20px;
+  }
+  
+  .wideCard {
+    min-height: 220px;
+    padding: 35px 25px;
+  }
+  
+  .reservedTitle {
+    font-size: 2.2rem;
+  }
+  
+  .iconImage {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .section {
+    padding: 50px 20px;
+  }
+  
+  .titleWrapper {
+    margin-bottom: 50px;
+  }
+  
+  .card {
+    min-height: 280px;
+    padding: 25px 20px;
+  }
+  
+  .wideCard {
+    min-height: 200px;
+    padding: 30px 20px;
+  }
+  
+  .cardTitle {
+    font-size: 1.3rem;
+  }
+  
+  .reservedTitle {
+    font-size: 2rem;
+  }
+  
+  .iconImage {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .cardButton, .learnMoreButton {
+    border-radius: 25px;
+    padding: 10px 24px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .section {
+    padding: 40px 15px;
+  }
+  
+  .card {
+    min-height: 260px;
+    padding: 20px 15px;
+  }
+  
+  .wideCard {
+    min-height: 180px;
+    padding: 25px 15px;
+  }
+  
+  .cardTitle {
+    font-size: 1.2rem;
+  }
+  
+  .reservedTitle {
+    font-size: 1.8rem;
+  }
+  
+  .reservedDescription {
+    font-size: 0.85rem;
+  }
+  
+  .iconImage {
+    width: 85px;
+    height: 85px;
+  }
+  
+  .cardButton, .learnMoreButton {
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 0.8rem;
+  }
+} 
