@@ -47,57 +47,9 @@ const SpottedQRSection: React.FC = () => (
           />
         </div>
 
-        {/* Left Side Step */}
-        <div className={styles.stepsSection}>
-          <div className={styles.step}>
-            <h3 className={styles.stepTitle}>
-              <TextSpanning
-                spans={[
-                  { text: "Scan ", fontFamily: 'gilroy', fontWeight: 400 },
-                  { text: "it", fontFamily: 'gilroy', fontWeight: 400, fontStyle: 'italic' },
-                  { text: ".", fontFamily: 'gilroy', fontWeight: 400 }
-                ]}
-              />
-            </h3>
-          </div>
-        </div>
 
-        {/* Right Side Steps */}
-        <div className={styles.stepsSection}>
-          <div className={styles.step}>
-            <h3 className={styles.stepTitle}>
-              <TextSpanning
-                spans={[
-                  { text: "Grab", fontFamily: 'gilroy', fontWeight: 400 }
-                ]}
-              />
-              <br />
-              <TextSpanning
-                spans={[
-                  { text: "cashback", fontFamily: 'gilroy', fontWeight: 400, fontStyle: 'italic' },
-                  { text: ".", fontFamily: 'gilroy', fontWeight: 400 }
-                ]}
-              />
-            </h3>
-          </div>
-          
-          <div className={styles.step}>
-            <h3 className={styles.stepTitle}>
-              <TextSpanning
-                spans={[
-                  { text: "Walk away", fontFamily: 'gilroy', fontWeight: 400 }
-                ]}
-              />
-              <br />
-              <TextSpanning
-                spans={[
-                  { text: "richer", fontFamily: 'gilroy', fontWeight: 400, fontStyle: 'italic' },
-                  { text: ".", fontFamily: 'gilroy', fontWeight: 400 }
-                ]}
-              />
-            </h3>
-          </div>
-        </div>
+
+      
       </div>
 
       {/* Download QR Section - Using the complete card design */}
