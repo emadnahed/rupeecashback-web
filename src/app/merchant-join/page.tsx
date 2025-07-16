@@ -2,6 +2,18 @@ import React from 'react';
 import styles from './page.module.css';
 import MerchantHeader from './components/MerchantHeader';
 import Image from 'next/image';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Join RupeeCashback - Partner with Us | Merchant Registration",
+  description: "Transform lost customers into lasting loyalty with RupeeCashback's premium cashback ecosystem. Empower your business growth while rewarding your customers seamlessly.",
+  keywords: "merchant registration, business partnership, cashback ecosystem, customer loyalty, business growth",
+  openGraph: {
+    title: "Join RupeeCashback - Partner with Us | Merchant Registration",
+    description: "Transform lost customers into lasting loyalty with RupeeCashback's premium cashback ecosystem. Empower your business growth while rewarding your customers seamlessly.",
+    type: "website",
+  },
+};
 
 export default function MerchantJoin() {
   return (

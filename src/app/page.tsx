@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import Header from './components/Header';
 import HeroSection from "./components/HeroSection";
@@ -12,13 +11,25 @@ import CashCarefreeSection from "./components/CashCarefreeSection";
 import WhatItsLikeToLiveTheRupsterlife from "./components/WhatItsLikeToLiveTheRupsterlife";
 import SpottedQRSection from "./components/SpottedQRSection";
 import Footer from "./components/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "RupeeCashback - Earn Real Money Every Time You Shop",
+  description: "Your RupeeCashback is always real money, ready to spend the moment you earn it. No points, no waiting - just instant cash rewards for every purchase.",
+  keywords: "cashback, real money, instant rewards, shopping, earn money",
+  openGraph: {
+    title: "RupeeCashback - Earn Real Money Every Time You Shop",
+    description: "Your RupeeCashback is always real money, ready to spend the moment you earn it. No points, no waiting - just instant cash rewards for every purchase.",
+    type: "website",
+  },
+};
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <Header />
       <HeroSection />
-            
+      
       <SectionCard
         background="radial-gradient(100.39% 102.54% at 100% 0%, #3ECD52 0%, #14481B 100%)"
         title="Earn every time you shop!"
