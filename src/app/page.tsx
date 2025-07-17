@@ -31,49 +31,72 @@ export default function Home() {
       <HeroSection />
       
       <SectionCard
-        background="radial-gradient(100.39% 102.54% at 100% 0%, #3ECD52 0%, #14481B 100%)"
-        title="Earn every time you shop!"
-        subtitle="Your RupeeCashback is always real money, ready to spend the moment you earn it. Forget endless waiting; it's all about instant access. Shop, earn, and do it all again."
+        background="radial-gradient(100.39% 102.54% at 100% 0%, #4CAF50 0%, #2E7D32 100%)"
+        titleLine1={{
+          regularText: "every",
+          italicText: "Earn "
+        }}
+        titleLine2={{
+          regularText: "time you ",
+          italicText: "shop!"
+        }}
+        paragraphLines={[
+          "Your RupeeCashback is always real money,",
+          "ready to spend the moment you earn it.",
+          "Forget endless waiting; it's all about instant",
+          "access. Shop, earn, and do it all again."
+        ]}
         imageSrc="/GreenContainer.svg"
         imageAlt="Phone showing cashback"
       />
 
       <SectionCard
-        background="radial-gradient(100.39% 102.54% at 100% 0%, #09B2CC 0%, #0738AC 100%)"
-        title="The real money."
-        subtitle="You won't find points here — just real cash. Withdraw it or spend it however you like with RupeeCashback."
+        background="radial-gradient(100.39% 102.54% at 100% 0%, #2196F3 0%, #0D47A1 100%)"
+        titleLine1={{
+          regularText: "The real",
+          italicText: ""
+        }}
+        titleLine2={{
+          regularText: "",
+          italicText: "money."
+        }}
+        paragraphLines={[
+          "You won't find points here — just real cash.",
+          "Withdraw it or spend it however you like",
+          "with RupeeCashback."
+        ]}
         imageSrc="/BlueContainer.svg"
         imageAlt="Phone showing cashback"
-        
       />
 
       <SectionCard
         background="radial-gradient(112.5% 111.22% at 104.39% 0%, #A788FD 0%, #250878 100%)"
-        title="Pay how you want."
-        subtitle="Pay your way, earn your way. It's your money — we don't touch it. No cash-out fees, ever."
+        titleLine1={{
+          regularText: " how",
+          italicText: "Pay"
+        }}
+        titleLine2={{
+          regularText: "you ",
+          italicText: "want."
+        }}
+        paragraphLines={[
+          "Pay your way, earn your way. It's",
+          "your money — we won't touch it. No",
+          "cash-out fees, ever."
+        ]}
         imageSrc="/PurpleContainer.svg"
         imageAlt="Phone showing cashback"
       />
 
       <MoneyBackFeelingContainer/>
-
       <ItGetsEvenBetter/>
-
-      {/* New TextImageSection components */}
       <PointlessSection />
       <KeepTogetherSection />
       <FeeFreeZoneSection />
       <CashCarefreeSection />
-
-      {/* What's it like to live the Rupester life section */}
       <WhatItsLikeToLiveTheRupsterlife />
-
-      {/* Spotted QR section */}
       <SpottedQRSection />
-
-      {/* Footer */}
       <Footer />
-
     </div>
   );
 }
