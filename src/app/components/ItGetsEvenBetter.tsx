@@ -10,18 +10,21 @@ const ItGetsEvenBetter: React.FC = () => (
           { 
             text: "It gets even ", 
             fontFamily: 'gilroy', 
-            fontWeight: 700
+            fontWeight: 700,
+            fontSize: 65
           },
           { 
             text: "better", 
             fontFamily: 'albra', 
             fontWeight: 500,
-            fontStyle: 'italic'
+            fontStyle: 'italic',
+            fontSize: 65
           },
           { 
             text: ".", 
             fontFamily: 'albra', 
-            fontWeight: 500
+            fontWeight: 500,
+            fontSize: 65
           }
      ]}
    />
