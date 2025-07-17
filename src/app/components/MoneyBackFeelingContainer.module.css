@@ -34,18 +34,28 @@
   z-index: 3;
   color: #fff;
   text-align: center;
-  font-size: 3.2rem;
-  font-weight: 700;
-  line-height: 1.1;
   margin: 0 auto;
   margin-top: 39vh;
   margin-bottom: 18vh;
   max-width: 700px;
 }
 
-.italic {
-  font-style: italic;
+.centerText h2 {
+  font-size: 89px;
+  line-height: 99px;
+  letter-spacing: -4px;
+  margin: 0;
+}
+
+.gilroyText {
+  font-family: 'Gilroy';
+  font-weight: 600;
+}
+
+.albraItalic {
+  font-family: 'Albra Sans', sans-serif;
   font-weight: 500;
+  font-style: italic;
 }
 
 .pill1 {

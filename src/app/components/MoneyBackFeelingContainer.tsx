@@ -15,14 +15,14 @@ const MoneyBackFeelingContainer: React.FC = () => (
     <PillShapeContainer className={styles.pill1} amount={"₹455.70"} from={"Pilgrim"} icon="/KoKappi.svg" />
     <PillShapeContainer className={styles.pill2} amount={"₹397.10"} from={"Boat"} icon="/icon2.svg" />
     <PillShapeContainer className={styles.pill3} amount={"₹455.70"} from={"Pilgrim"} icon="/icon1.svg" />
-    {/* <PillShapeContainer className={styles.pill4} amount={"₹455.70"} from={"KO KAPPI"} icon="/icon3.svg" />
-    <PillShapeContainer className={styles.pill5} amount={"₹397.10"} from={"Boat"} icon="/icon2.svg" /> */}
 
     {/* Central Heading */}
     <div className={styles.centerText}>
       <h2>
-        That <span className={styles.italic}>Money Back</span><br />
-        Feeling.
+        <span className={styles.gilroyText}>That </span>
+        <span className={styles.albraItalic}>Money </span>
+        <span className={styles.gilroyText}>Back</span><br />
+        <span className={styles.albraItalic}>Feeling.</span>
       </h2>
     </div>
     
