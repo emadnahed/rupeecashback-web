@@ -7,49 +7,83 @@
   background: #000;
   color: #fff;
   text-align: center;
-  padding: 200px 0px 400px 0px;
+  padding: 200px 0px 350px 0px;
 }
 
 .content {
-  max-width: 700px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-bottom: 24px;
+  font-size: 5rem;
   line-height: 1.1;
+  margin-bottom: 40px;
+  letter-spacing: -0.02em;
 }
 
-.emphasis {
+.gilroyBold {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 700;
+}
+
+.albraItalic {
+  font-family: 'Albra Sans', sans-serif;
+  font-weight: 400;
   font-style: italic;
-  font-weight: 900;
+}
+
+.subtitleWrapper {
+  width: 904px;
+  height: 87px;
+  margin-bottom: 40px;
 }
 
 .subtitle {
-  font-size: 1.1rem;
-  font-weight: 300;
-  margin-bottom: 32px;
-  color: #eee;
-}
-
-.brand {
-  font-style: italic;
-  font-weight: 500;
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #fff;
 }
 
 .cta {
-  padding: 14px 32px;
+  width: 222px;
+  height: 55px;
+  padding: 16px 34px;
   border: 2px solid #fff;
   background: transparent;
   color: #fff;
-  border-radius: 10px;
-  font-size: 1.1rem;
-  font-family: inherit;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
+}
+
+.gilroyText {
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20.74px;
+  letter-spacing: -0.8px;
+}
+
+.albraSemiItalic {
+  font-family: 'Albra Sans', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 20.74px;
+  letter-spacing: -0.8px;
 }
 
 .cta:hover, .cta:focus {
@@ -58,64 +92,52 @@
   outline: none;
 }
 
-/* Font classes for TextSpanning component */
-.gilroy400 {
-  font-family: 'Gilroy', Arial, sans-serif;
-  font-weight: 400;
-  font-display: swap;
+@media (max-width: 1024px) {
+  .subtitleWrapper {
+    width: 100%;
+    height: auto;
+    max-width: 904px;
+  }
 }
 
-.gilroy500 {
-  font-family: 'Gilroy', Arial, sans-serif;
-  font-weight: 500;
-  font-display: swap;
-}
+@media (max-width: 768px) {
+  .hero {
+    padding: 150px 0px 300px 0px;
+  }
 
-.gilroy600 {
-  font-family: 'Gilroy', Arial, sans-serif;
-  font-weight: 600;
-  font-display: swap;
-}
-
-.gilroy700 {
-  font-family: 'Gilroy', Arial, sans-serif;
-  font-weight: 700;
-  font-display: swap;
-}
-
-.albra400 {
-  font-family: 'Albra Sans', Arial, sans-serif;
-  font-weight: 400;
-  font-display: swap;
-}
-
-.albra500 {
-  font-family: 'Albra Sans', Arial, sans-serif;
-  font-weight: 500;
-  font-display: swap;
-}
-
-.albra600 {
-  font-family: 'Albra Sans', Arial, sans-serif;
-  font-weight: 600;
-  font-display: swap;
-}
-
-.albra700 {
-  font-family: 'Albra Sans', Arial, sans-serif;
-  font-weight: 700;
-  font-display: swap;
-}
-
-@media (max-width: 600px) {
   .title {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
+
   .subtitle {
-    font-size: 1rem;
+    font-size: 18px;
+    line-height: 26px;
   }
+
   .cta {
-    font-size: 1rem;
-    padding: 10px 18px;
+    width: auto;
+    height: auto;
+    padding: 12px 28px;
+  }
+
+  .gilroyText,
+  .albraSemiItalic {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 100px 0px 200px 0px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 24px;
   }
 } 

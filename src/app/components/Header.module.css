@@ -2,64 +2,65 @@
     width: 100%;
     background: #000;
     padding: 0;
-  }
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.12);
+}
   
-  .nav {
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 100vw;
     padding: 32px 48px 0 48px;
-  }
+}
   
-  .logoContainer {
+.logoContainer {
     display: flex;
     align-items: center;
-    
-  }
+}
   
-  .logo {
+.logo {
     display: block;    
     width: auto;    
     height: 60%;
-  }
+}
   
-  .actions {
+.actions {
     display: flex;
     align-items: center;
     gap: 32px;
-  }
+}
   
-  .merchantBtn {
+.merchantBtn {
     color: #fff;
     background: transparent;
     border: 3px solid #fff;
     border-radius: 14px;
     padding: 16px 34px;
-    font-size: 1rem;
-    font-family: 'Montserrat', 'Arial', sans-serif;
-    font-weight: 200;
-    letter-spacing: 0.01em;
+    font-size: 19px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.8px;
+    line-height: 20.74px;
     transition: background 0.2s, color 0.2s;
     text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: center;
-  }
+    gap: 4px;
+}
   
-  .merchantBtn:hover,
-  .merchantBtn:focus {
+.merchantBtn:hover,
+.merchantBtn:focus {
     background: #fff;
     color: #000;
     outline: none;
-  }
-  
-  .italic {
+}
+
+.italicText {
     font-style: italic;
-    margin: 0 0.2em;
-  }
+    margin: 0 2px;
+}
   
-  .menuBtn {
+.menuBtn {
     background: none;
     border: none;
     display: flex;
@@ -70,9 +71,9 @@
     padding: 0 0 0 8px;
     width: 36px;
     height: 36px;
-  }
+}
   
-  .menuBar {
+.menuBar {
     width: 34px;
     height: 3px;
     background: #fff;
@@ -80,80 +81,73 @@
     border-radius: 2px;
     transition: all 0.2s;
     display: block;
-  }
+}
   
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
     .nav {
-      flex-direction: column;
-      align-items: center;
-      padding: 6px 8px 0 8px;
-      gap: 16px;
+        flex-direction: column;
+        align-items: center;
+        padding: 6px 8px 0 8px;
+        gap: 16px;
     }
     .logo {
-      height: 48px;
-      margin-bottom: 8px;
+        height: 48px;
+        margin-bottom: 8px;
     }
     .actions {
-      flex-direction: row;
-      gap: 16px;
-      width: 100%;
-      justify-content: center;
+        flex-direction: row;
+        gap: 16px;
+        width: 100%;
+        justify-content: center;
     }
     .merchantBtn {
-      font-size: 1rem;
-      padding: 8px 12px;
-      border-width: 2px;
-      border-radius: 10px;
+        font-size: 1rem;
+        padding: 8px 12px;
+        border-width: 2px;
+        border-radius: 10px;
     }
     .menuBtn {
-      width: 32px;
-      height: 32px;
-      padding-left: 4px;
+        width: 32px;
+        height: 32px;
+        padding-left: 4px;
     }
     .menuBar {
-      width: 25px;
-      height: 2px;
-      margin: 3px 0;
+        width: 25px;
+        height: 2px;
+        margin: 3px 0;
     }
-  }
-
-@media (max-width: 600px) {
-  .nav {
-    flex-direction: row;
-    align-items: center;
-    /* justify-content: space-between; */
-    /* padding: 8px 4vw 0 4vw; */
-    gap: 0;
-  }
-  .actions {
-    flex-direction: row;
-    gap: 8px;
-    width: auto;
-    justify-content: space-around;
-    margin-right: -15;    
-  }
-  .logo {
-    height: 32px;
-    /* margin-bottom: 0; */
-  }
-  .merchantBtn {
-    font-size: 0.9rem;
-    padding: 6px 8px;
-    border-width: 2px;
-    border-radius: 8px;
-  }
-  .menuBtn {
-    width: 28px;
-    height: 28px;
-    padding-left: 5px;
-  }
-  .menuBar {
-    width: 30px;
-    height: 3px;
-    margin: 2px 0;
-  }
 }
 
-.header {
-  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.12);
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+    }
+    .actions {
+        flex-direction: row;
+        gap: 8px;
+        width: auto;
+        justify-content: space-around;
+        margin-right: -15;    
+    }
+    .logo {
+        height: 32px;
+    }
+    .merchantBtn {
+        font-size: 0.9rem;
+        padding: 6px 8px;
+        border-width: 2px;
+        border-radius: 8px;
+    }
+    .menuBtn {
+        width: 28px;
+        height: 28px;
+        padding-left: 5px;
+    }
+    .menuBar {
+        width: 30px;
+        height: 3px;
+        margin: 2px 0;
+    }
 } 

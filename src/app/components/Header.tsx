@@ -21,7 +21,7 @@ const Header: React.FC = () => {
         </div>
         <div className={styles.actions}>
           <Link href="/merchant-join" className={styles.merchantBtn} aria-label="Join as a Merchant">
-            Join <span className={styles.italic}>as a</span> Merchant
+            Join <span className={styles.italicText}>as</span> a Merchant
           </Link>
           <button className={styles.menuBtn} aria-label="Open menu">
             <span className={styles.menuBar}></span>

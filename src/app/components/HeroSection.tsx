@@ -5,14 +5,19 @@ const HeroSection: React.FC = () => (
   <section className={styles.hero} aria-label="Main hero section">
     <div className={styles.content}>
       <h1 className={styles.title}>
-        YOUR MONEY<br />
-        ON <span className={styles.emphasis}>MAXX.</span>
+        <span className={styles.gilroyBold}>YOUR MONEY</span><br />
+        <span className={styles.gilroyBold}>ON </span>
+        <span className={styles.albraItalic}>MAXX.</span>
       </h1>
-      <p className={styles.subtitle}>
-        Who wants to spend money without getting anything back? Nobody! With <span className={styles.brand}>RupeeCashback</span>, your spending equals earning. Our members are already racking up serious cashback and rewards. It’s simply about shopping how you already do – just smarter, with <span className={styles.brand}>RupeeCashback</span>.
-      </p>
+      <div className={styles.subtitleWrapper}>
+        <p className={styles.subtitle}>
+          Who wants to spend money without getting anything back? Nobody! With RupeeCashback, your spending equals earning. Our members are already racking up serious cashback and rewards. It's simply about shopping how you already do — just smarter, with RupeeCashback.
+        </p>
+      </div>
       <button className={styles.cta}>
-        Get RupeeCashback App
+        <span className={styles.gilroyText}>Get </span>
+        <span className={styles.albraSemiItalic}>RupeeCashback </span>
+        <span className={styles.gilroyText}>App</span>
       </button>
     </div>
   </section>
