@@ -31,7 +31,7 @@ export default function Home() {
       <HeroSection />
       
       <SectionCard
-        background="radial-gradient(100.39% 102.54% at 100% 0%, #4CAF50 0%, #2E7D32 100%)"
+        background="radial-gradient(100.39% 102.54% at 100% 0%, #3ECD52 0%, #14481B 100%)"
         titleLine1={{
           regularText: "every",
           italicText: "Earn "
@@ -51,7 +51,7 @@ export default function Home() {
       />
 
       <SectionCard
-        background="radial-gradient(100.39% 102.54% at 100% 0%, #2196F3 0%, #0D47A1 100%)"
+        background="radial-gradient(100.39% 102.54% at 100% 0%, #09B2CC 0%, #0738AC 100%)"
         titleLine1={{
           regularText: "The real",
           italicText: ""

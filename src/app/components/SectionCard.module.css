@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -13,6 +14,18 @@
   /* Scroll snap alignment */
   scroll-snap-align: start;
   scroll-snap-stop: always;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: url(/noise.svg#noiseFilter);
+  opacity: 0.05;
+  pointer-events: none;
 }
 
 .content {
@@ -83,7 +96,7 @@
 
 .image {
   width: 100%;
-  max-width: 250px;
+  max-width: 350px;
   height: auto;
   border-radius: 0;
   object-fit: contain;
@@ -127,17 +140,25 @@
 
 @media (max-width: 768px) {
   .card {
-    height: auto;
-    min-height: 350px;
-    padding: 25px 20px;
-    margin: 15px auto;
-    position: relative;
+    height: 100vh; /* Use 100vh to ensure it fills the viewport */
+    min-height: auto;
+    padding: 10vh 24px; /* Use vh for responsive vertical padding */
+    margin: 0;
+    border-radius: 0;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
   }
   
   .content {
+    display: flex;
     flex-direction: column;
+    justify-content: space-between; /* Push content to top and bottom */
+    align-items: center; /* Horizontally center the content blocks */
     gap: 20px;
-    text-align: center;
+    height: 100%;
+    width: 100%;
   }
   
   .reverse {
@@ -145,87 +166,59 @@
   }
   
   .text {
-    flex: none;
-    max-width: 100%;
-    order: 2;
-    z-index: 2;
-    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 500px;
+    text-align: left; /* Keep text itself left-aligned */
   }
   
   .titleLine {
-    font-size: 32px;
-    line-height: 36px;
-    margin-bottom: 3px;
+    font-size: 38px;
+    line-height: 1.15;
+    margin-bottom: 1rem;
   }
   
   .subtitle {
-    font-size: 13px;
-    line-height: 18px;
-    max-width: 90%;
-    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.85;
   }
   
   .imageWrapper {
-    flex: none;
-    max-width: 250px;
-    width: 60%;
-    margin: 0 auto;
-    order: 1;
-    position: relative;
-    height: 180px; /* Set fixed height to enable cropping */
-    overflow: hidden; /* Hide the bottom portion */
+    width: 100%;
+    text-align: center;
+    margin-top: auto; /* Push to the bottom */
   }
   
   .image {
-    max-width: 250px;
-    height: 240px; /* Make image taller than container to create crop effect */
-    object-fit: cover;
-    object-position: top; /* Align to show top 75% */
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
+    transform: none;
+    max-width: 260px;
+    width: 80%;
+    height: auto;
+    object-fit: contain;
   }
 }
 
 @media (max-width: 480px) {
   .card {
-    padding: 20px 15px;
-    margin: 10px auto;
-    height: auto;
-    min-height: 300px;
+    padding: 8vh 20px;
   }
-  
-  .content {
-    gap: 18px;
-  }
-  
   .titleLine {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 32px;
   }
-  
   .subtitle {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 15px;
   }
-  
-  .imageWrapper {
-    max-width: 200px;
-    width: 70%;
-    height: 150px; /* Adjust height for smaller screens */
-  }
-  
   .image {
-    max-width: 200px;
-    height: 200px; /* Make image taller than container */
+    max-width: 220px;
   }
 } 
 
 @media (max-width: 320px) {
   .card {
-    padding: 15px 10px;
-    min-height: 280px;
+    padding: 40px 10px;
+    min-height: 100vh;
   }
 
   .titleLine {
@@ -240,11 +233,11 @@
 
   .imageWrapper {
     max-width: 180px;
-    height: 130px;
+    height: auto;
   }
 
   .image {
-    max-width: 180px;
-    height: 180px;
+    max-width: 150px;
+    height: auto;
   }
 } 

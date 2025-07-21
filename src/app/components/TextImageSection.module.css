@@ -204,3 +204,45 @@
     max-width: 320px;
   }
 } 
+
+/* Overriding for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .section {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .title, .title span {
+    font-size: 2.2rem !important;
+    line-height: 1.2 !important;
+    letter-spacing: -1px !important;
+  }
+
+  .description, .description span {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    letter-spacing: -0.5px !important;
+  }
+  
+  .content {
+    gap: 40px;
+  }
+
+  .imageWrapper {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title, .title span {
+    font-size: 1.8rem !important;
+  }
+  .description, .description span {
+    font-size: 0.9rem !important;
+  }
+  .imageWrapper {
+    max-width: 200px;
+  }
+} 

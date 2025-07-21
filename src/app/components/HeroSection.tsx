@@ -1,8 +1,21 @@
 import React from 'react';
 import styles from './HeroSection.module.css';
+import Particles from './Particles';
 
 const HeroSection: React.FC = () => (
   <section className={styles.hero} aria-label="Main hero section">
+    <div className={styles.particlesWrapper}>
+      <Particles
+        particleColors={['#ffffff', '#ffffff']}
+        particleCount={200}
+        particleSpread={10}
+        speed={0.1}
+        particleBaseSize={100}
+        moveParticlesOnHover={true}
+        alphaParticles={false}
+        disableRotation={false}
+      />
+    </div>
     <div className={styles.content}>
       <h1 className={styles.title}>
         <span className={styles.gilroyBold}>YOUR MONEY</span><br />

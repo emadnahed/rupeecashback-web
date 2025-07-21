@@ -175,118 +175,98 @@
 }
 
 @media (max-width: 900px) {
-  .title {
-    font-size: 3rem;
-  }
-  
   .section {
-    padding: 60px 25px;
+    height: 100vh;
+    min-height: auto;
+    padding: 8vh 24px;
+    box-sizing: border-box;
   }
-  
-  .cardsGrid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .wideCard {
-    grid-column: 1;
-  }
-  
-  .card {
-    min-height: 300px;
-    padding: 25px 20px;
-  }
-  
-  .wideCard {
-    min-height: 220px;
-    padding: 35px 25px;
-  }
-  
-  .reservedTitle {
-    font-size: 2.2rem;
-  }
-  
-  .iconImage {
-    width: 110px;
-    height: 110px;
-  }
-}
 
-@media (max-width: 600px) {
-  .section {
-    min-height: 100vh;
-    height: auto;
-    padding: 24px 0 24px 0;
-  }
-  .cardsGrid {
+  .container {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    justify-content: space-between;
+    height: 100%;
   }
-  .card, .wideCard {
-    width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
-    padding: 16px 8px;
-    min-height: 180px;
+
+  .titleWrapper {
+    margin-bottom: 0;
   }
-  .cardTitle, .reservedTitle {
-    font-size: 1rem;
-  }
-  .iconImage {
-    width: 60px;
-    height: 60px;
-  }
-}
-@media (max-width: 400px) {
+
   .title {
-    font-size: 1.2rem;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    text-align: left;
   }
+
+  .cardsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+  }
+
   .card, .wideCard {
-    padding: 10px 2px;
-    min-height: 120px;
+    padding: 12px;
+    min-height: auto;
+    border-radius: 15px;
+  }
+  
+  .wideCard {
+    grid-column: 1 / -1;
+  }
+
+  .iconWrapper {
+    margin-bottom: 10px;
+  }
+
+  .iconImage {
+    width: 35px;
+    height: 35px;
+  }
+
+  .cardTitle {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .cardButton, .learnMoreButton {
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+  }
+
+  .reservedTitle {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .reservedDescription {
+    font-size: 0.7rem;
+    line-height: 1.3;
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 480px) {
-  .title {
-    font-size: 2rem;
-  }
-  
   .section {
-    padding: 40px 15px;
+    padding: 6vh 20px;
   }
-  
-  .card {
-    min-height: 260px;
-    padding: 20px 15px;
+  .title {
+    font-size: 2.5rem;
   }
-  
-  .wideCard {
-    min-height: 180px;
-    padding: 25px 15px;
+  .cardsGrid {
+    gap: 10px;
   }
-  
+  .card, .wideCard {
+    padding: 10px;
+  }
   .cardTitle {
-    font-size: 1.2rem;
+    font-size: 0.75rem;
   }
-  
-  .reservedTitle {
-    font-size: 1.8rem;
-  }
-  
-  .reservedDescription {
-    font-size: 0.85rem;
-  }
-  
   .iconImage {
-    width: 85px;
-    height: 85px;
-  }
-  
-  .cardButton, .learnMoreButton {
-    border-radius: 20px;
-    padding: 8px 20px;
-    font-size: 0.8rem;
+    width: 30px;
+    height: 30px;
   }
 } 
