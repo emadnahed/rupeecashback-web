@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  box-sizing: border-box;
   
   /* Scroll snap alignment */
   scroll-snap-align: start;
@@ -22,7 +23,7 @@
 }
 
 .titleWrapper {
-  text-align: center;
+  text-align: center;  
   margin-bottom: 120px;
 }
 
@@ -245,39 +246,52 @@
 
 @media (max-width: 600px) {
   .title {
-    font-size: 2.8rem;
+    line-height: 1.1 !important;
   }
-  
-  .section {
-    padding: 60px 20px 50px;
-  }
-  
   .titleWrapper {
-    margin-bottom: 60px;
+    margin-bottom: 18px !important;
   }
-  
+  .title br {
+    display: none;
+  }
+  .title > *:first-child {
+    margin-bottom: 0.2em !important;
+    display: block;
+  }
   .phoneImage {
-    width: 500px;
+    width: 70vw;
+    max-width: 320px;
+    min-width: 160px;
   }
-  
-  .stepsSection {
-    flex-direction: column;
-    gap: 30px;
-    padding: 0 15px;
+  .phoneStepsContainer {
+    min-height: 200px;
+    margin-bottom: 30px;
   }
-  
-  .stepTitle {
-    font-size: 1.9rem;
+  .section {
+    min-height: 100vh;
+    height: auto;
+    padding: 24px 0 24px 0;
   }
-  
-  .downloadCard {
-    max-width: 350px;
+}
+@media (max-width: 400px) {
+  .title {
+    font-size: 1.1rem;
+  }
+  .phoneImage {
+    width: 80vw;
+    max-width: 90vw;
+    min-width: 120px;
+  }
+  .titleWrapper {
+    margin-bottom: 10px !important;
   }
 }
 
 @media (max-width: 480px) {
   .title {
-    font-size: 2.3rem;
+    font-weight: 400;
+  line-height: 0.32;
+  
   }
   
   .section {
@@ -285,7 +299,7 @@
   }
   
   .phoneImage {
-    width: 400px;
+    width: 95%;
   }
   
   .stepTitle {
@@ -294,5 +308,25 @@
   
   .downloadCard {
     max-width: 300px;
+  }
+} 
+
+@media (max-width: 320px) {
+  .title {
+    /* font-size: 5.5rem; */
+  font-weight: 400;
+  line-height: 0.2;
+  margin: 0;
+  color: inherit;
+  letter-spacing: -0.08em;
+
+  }
+
+  .stepTitle {
+    font-size: 1.4rem;
+  }
+
+  .phoneImage {
+    width: 80%;
   }
 } 

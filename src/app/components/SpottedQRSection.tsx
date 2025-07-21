@@ -14,7 +14,8 @@ const SpottedQRSection: React.FC = () => (
                 text: "Spotted a", 
                 fontFamily: 'gilroy', 
                 fontWeight: 400,
-                fontSize: '89px',
+                // fontSize: '89px',
+                fontSize: '100%' ,
                 style: { lineHeight: '99px', letterSpacing: '0px' }
               }
             ]}
@@ -27,14 +28,16 @@ const SpottedQRSection: React.FC = () => (
                 fontFamily: 'albra', 
                 fontWeight: 500,
                 fontStyle: 'italic',
-                fontSize: '89px',
+                fontSize: '100%' ,
+                // fontSize: '63%' ,
                 style: { lineHeight: '99px', letterSpacing: '0px' }
               },
               { 
                 text: " QR?", 
                 fontFamily: 'gilroy', 
                 fontWeight: 400,
-                fontSize: '89px',
+                fontSize: '100%' ,
+                // fontSize: '63%' ,
                 style: { lineHeight: '99px', letterSpacing: '0px' }
               }
             ]}

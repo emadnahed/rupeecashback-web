@@ -1,6 +1,7 @@
 .section {
   width: 100vw;
   height: 100vh;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,28 +149,32 @@
 
 @media (max-width: 600px) {
   .section {
-    padding: 50px 20px;
-    min-height: 70vh;
+    min-height: 100vh;
+    height: auto;
+    padding: 24px 0 24px 0;
   }
-  
   .content {
-    gap: 40px;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 20px;
   }
-  
+  .textContent {
+    min-width: 0;
+    max-width: 100%;
+  }
+  .imageWrapper {
+    max-width: 180px;
+  }
   .title {
-    font-size: 2.5rem;
+    font-size: 1.3rem;
   }
-  
-  .subtitle {
-    font-size: 1.6rem;
   }
-  
-  .description {
+@media (max-width: 400px) {
+  .title {
     font-size: 1rem;
   }
-  
   .imageWrapper {
-    max-width: 400px;
+    max-width: 120px;
   }
 }
 

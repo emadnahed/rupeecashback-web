@@ -1,6 +1,7 @@
 .section {
   width: 100vw;
   height: 100vh;
+  box-sizing: border-box;
   background: #000;
   color: #fff;
   padding: 40px;
@@ -212,45 +213,38 @@
 }
 
 @media (max-width: 600px) {
-  .title {
-    font-size: 2.5rem;
-  }
-  
   .section {
-    padding: 50px 20px;
+    min-height: 100vh;
+    height: auto;
+    padding: 24px 0 24px 0;
   }
-  
-  .titleWrapper {
-    margin-bottom: 50px;
+  .cardsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
   }
-  
-  .card {
-    min-height: 280px;
-    padding: 25px 20px;
+  .card, .wideCard {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 16px 8px;
+    min-height: 180px;
   }
-  
-  .wideCard {
-    min-height: 200px;
-    padding: 30px 20px;
+  .cardTitle, .reservedTitle {
+    font-size: 1rem;
   }
-  
-  .cardTitle {
-    font-size: 1.3rem;
-  }
-  
-  .reservedTitle {
-    font-size: 2rem;
-  }
-  
   .iconImage {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
   }
-  
-  .cardButton, .learnMoreButton {
-    border-radius: 25px;
-    padding: 10px 24px;
-    font-size: 0.85rem;
+}
+@media (max-width: 400px) {
+  .title {
+    font-size: 1.2rem;
+  }
+  .card, .wideCard {
+    padding: 10px 2px;
+    min-height: 120px;
   }
 }
 
