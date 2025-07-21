@@ -1,13 +1,17 @@
 .hero {
-  width: 100%;
-  min-height: 60vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #000;
   color: #fff;
   text-align: center;
-  padding: 200px 0px 350px 0px;
+  padding: 40px;
+  
+  /* Scroll snap alignment */
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .content {

@@ -1,12 +1,16 @@
 .wrapper {
   position: relative;
-  width: 100%;
-  min-height: 80vh;
+  width: 100vw;
+  height: 100vh;
   background: #000;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  
+  /* Scroll snap alignment */
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .leftHand {

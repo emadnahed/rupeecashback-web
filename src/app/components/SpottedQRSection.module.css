@@ -1,13 +1,16 @@
 .section {
-  width: 100%;
-  min-height: 100vh;
-  /* background: #1a1a1a; */
+  width: 100vw;
+  height: 100vh;
   color: #ffffff;
-  padding: 120px 40px 80px;
+  padding: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  
+  /* Scroll snap alignment */
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .container {

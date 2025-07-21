@@ -13,7 +13,9 @@ const SpottedQRSection: React.FC = () => (
               { 
                 text: "Spotted a", 
                 fontFamily: 'gilroy', 
-                fontWeight: 400
+                fontWeight: 400,
+                fontSize: '89px',
+                style: { lineHeight: '99px', letterSpacing: '0px' }
               }
             ]}
           />
@@ -22,14 +24,18 @@ const SpottedQRSection: React.FC = () => (
             spans={[
               { 
                 text: "RupeeCashback", 
-                fontFamily: 'gilroy', 
-                fontWeight: 400,
-                fontStyle: 'italic'
+                fontFamily: 'albra', 
+                fontWeight: 500,
+                fontStyle: 'italic',
+                fontSize: '89px',
+                style: { lineHeight: '99px', letterSpacing: '0px' }
               },
               { 
                 text: " QR?", 
                 fontFamily: 'gilroy', 
-                fontWeight: 400
+                fontWeight: 400,
+                fontSize: '89px',
+                style: { lineHeight: '99px', letterSpacing: '0px' }
               }
             ]}
           />

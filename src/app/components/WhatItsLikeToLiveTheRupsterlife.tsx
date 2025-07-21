@@ -13,7 +13,9 @@ const WhatItsLikeToLiveTheRupsterlife: React.FC = () => (
               { 
                 text: "What's it like to live", 
                 fontFamily: 'gilroy', 
-                fontWeight: 400
+                fontWeight: 700,
+                fontSize: '89px',
+                style: { lineHeight: '99px', letterSpacing: '-4px' }
               }
             ]}
           />
@@ -23,18 +25,24 @@ const WhatItsLikeToLiveTheRupsterlife: React.FC = () => (
               { 
                 text: "the ", 
                 fontFamily: 'gilroy', 
-                fontWeight: 400
+                fontWeight: 700,
+                fontSize: '89px',
+                style: { lineHeight: '99px', letterSpacing: '-4px' }
               },
               { 
                 text: "Rupester", 
-                fontFamily: 'gilroy', 
-                fontWeight: 400,
-                fontStyle: 'italic'
+                fontFamily: 'albra', 
+                fontWeight: 500,
+                fontStyle: 'italic',
+                fontSize: '89px',
+                style: { lineHeight: '99px', letterSpacing: '-4px' }
               },
               { 
                 text: " life?", 
                 fontFamily: 'gilroy', 
-                fontWeight: 400
+                fontWeight: 700,
+                fontSize: '89px',
+                style: { lineHeight: '99px', letterSpacing: '-4px' }
               }
             ]}
           />
