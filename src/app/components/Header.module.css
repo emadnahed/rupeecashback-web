@@ -127,6 +127,7 @@
         flex-direction: row;
         align-items: center;
         gap: 0;
+        padding-top: 10px; /* Added padding-top for mobile */
     }
     .actions {
         flex-direction: row;

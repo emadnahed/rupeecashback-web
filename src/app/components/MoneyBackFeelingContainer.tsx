@@ -1,10 +1,8 @@
 import React from 'react';
 import styles from "./MoneyBackFeelingContainer.module.css"
 import PillShapeContainer from './PillShapeContainer';
-import MoneyBackTextBlock from './MoneyBackTextBlock';
 
 const MoneyBackFeelingContainer: React.FC = () => (
-  <>
   <section className={styles.wrapper}>
     {/* Left Hand */}
     <img src="/LeftHand.svg" alt="Left hand" className={styles.leftHand} />
@@ -27,8 +25,6 @@ const MoneyBackFeelingContainer: React.FC = () => (
     </div>
     
   </section>
-  <MoneyBackTextBlock/>
-  </>
 );
 
 export default MoneyBackFeelingContainer;

@@ -12,6 +12,7 @@ import WhatItsLikeToLiveTheRupsterlife from "./components/WhatItsLikeToLiveTheRu
 import SpottedQRSection from "./components/SpottedQRSection";
 import Footer from "./components/Footer";
 import type { Metadata } from "next";
+import MoneyBackContentSection from "./components/MoneyBackContentSection";
 
 export const metadata: Metadata = {
   title: "RupeeCashback - Earn Real Money Every Time You Shop",
@@ -89,6 +90,7 @@ export default function Home() {
       />
 
       <MoneyBackFeelingContainer/>
+      <MoneyBackContentSection/>
       <ItGetsEvenBetter/>
       <PointlessSection />
       <KeepTogetherSection />

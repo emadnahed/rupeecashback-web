@@ -1,21 +1,51 @@
 .textBlock {
+  background-color: #000;
   color: #fff;
-  font-size: 24px;
-  font-family: 'Gilroy', sans-serif;
-  font-weight: 400;
-  line-height: 34px;
-  letter-spacing: 0px;
+  padding: 150px 20px; /* Added padding here */
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Ensure it takes full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textWrapper {
+  max-width: 450px; /* Adjusted max-width for desired line breaks */
+  margin: 0 auto;
   text-align: center;
-  max-width: 415px;
-  margin: 40px auto 0 auto;
-  padding: 0 12px;
+}
+
+.textBlock p {
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-size: 1.35rem; /* Adjusted font size */
+  line-height: 1.55; /* Adjusted line height */
+  margin-bottom: 2.5em;
 }
 
 .italic {
-  font-style: italic;
-  font-weight: 500;
+  font-family: 'Albra-Italic', serif;
 }
 
-.bottom {
-  margin-top: 1.5em;
+@media (max-width: 992px) {
+  .textBlock p {
+    font-size: 1.05rem;
+  }
+  .textWrapper {
+    max-width: 350px; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .textBlock {
+    height: auto; /* Allow height to adjust on mobile */
+    padding: 80px 20px; /* Adjusted padding for mobile */
+  }
+  .textWrapper {
+    max-width: 100%; /* Full width on very small screens */
+  }
+  .textBlock p {
+    font-size: 0.85rem; /* Adjusted font size for mobile */
+    margin-bottom: 2em;
+  }
 } 
