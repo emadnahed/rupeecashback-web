@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from './Footer.module.css';
+import spottedStyles from './SpottedQRSection.module.css';
 import TextSpanning from './TextSpanning';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer: React.FC = () => (
   <footer className={styles.footer} aria-label="Site footer">
@@ -8,25 +11,16 @@ const Footer: React.FC = () => (
       {/* Logo Section */}
       <div className={styles.logoSection}>
         <div className={styles.logo}>
-          <TextSpanning
-            spans={[
-              { 
-                text: "rupee", 
-                fontFamily: 'gilroy', 
-                fontWeight: 400 
-              }
-            ]}
-          />
-          <br />
-          <TextSpanning
-            spans={[
-              { 
-                text: "cashback", 
-                fontFamily: 'gilroy', 
-                fontWeight: 400 
-              }
-            ]}
-          />
+        <Link href="/" aria-label="Rupee Cashback Home">
+            <Image
+              src="/RupeeCashbackLogo.svg"
+              alt="Rupee Cashback Logo"
+              className={styles.logo}
+              width={180}
+              height={80}
+              priority
+            />
+          </Link>
         </div>
       </div>
 
@@ -184,6 +178,15 @@ const Footer: React.FC = () => (
             />
           </div>
         </div>
+      </div>
+
+      {/* QR Code Section */}
+      <div className={styles.qrCodeSection}>
+        <img
+          src="/DownloadQR.svg"
+          alt="Download RupeeCashback - QR code to download the app"
+          className={spottedStyles.downloadCard}
+        />
       </div>
     </div>
 

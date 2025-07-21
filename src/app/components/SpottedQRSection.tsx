@@ -56,16 +56,7 @@ const SpottedQRSection: React.FC = () => (
 
 
       
-      </div>
-
-      {/* Download QR Section - Using the complete card design */}
-      <div className={styles.downloadSection}>
-        <img 
-          src="/DownloadQR.svg" 
-          alt="Download RupeeCashback - QR code to download the app" 
-          className={styles.downloadCard}
-        />
-      </div>
+      </div>      
     </div>
   </section>
 );
