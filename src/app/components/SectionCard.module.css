@@ -1,13 +1,14 @@
 .card {
   position: relative;
-  width: 80vw;  
+  /* width: 80vw;   */
+  width:90vw;  
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;  
   padding: 40px;
   color: #fff;
-  margin: 10vh 40px; /* Vertically center the card */
+  margin: 29vh 20px; /* Vertically center the card */
   border-radius: 15px;
   overflow: hidden;
   
@@ -202,16 +203,23 @@
 
 @media (max-width: 480px) {
   .card {
-    padding: 8vh 20px;
+    padding: 8vh 10px;
+    margin: 120px 0px;    
+    height: 60%;
+    width: 100%;
+    border-radius: 15px;        
   }
   .titleLine {
     font-size: 32px;
+    text-align: center;
+    line-height: 45%;
   }
   .subtitle {
-    font-size: 15px;
+    font-size: 15px;    
+    text-align: center;
   }
   .image {
-    max-width: 220px;
+    max-width: 45%;
   }
 } 
 

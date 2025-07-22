@@ -15,6 +15,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "RupeeCashback - Earn Real Money Every Time You Shop",
   description: "Your RupeeCashback is always real money, ready to spend the moment you earn it. No points, no waiting - just instant cash rewards for every purchase.",
+  keywords: "cashback, real money, instant rewards, shopping, earn money",
+  openGraph: {
+    title: "RupeeCashback - Earn Real Money Every Time You Shop",
+    description: "Your RupeeCashback is always real money, ready to spend the moment you earn it. No points, no waiting - just instant cash rewards for every purchase.",
+    type: "website",
+  },
   icons: {
     icon: [
       {

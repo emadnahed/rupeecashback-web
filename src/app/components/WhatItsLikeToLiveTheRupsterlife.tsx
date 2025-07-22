@@ -2,7 +2,11 @@ import React from 'react';
 import styles from './WhatItsLikeToLiveTheRupsterlife.module.css';
 import TextSpanning from './TextSpanning';
 
-const WhatItsLikeToLiveTheRupsterlife: React.FC = () => (
+interface WhatItsLikeToLiveTheRupsterlifeProps {
+    isMobile: boolean;
+}
+
+const WhatItsLikeToLiveTheRupsterlife: React.FC<WhatItsLikeToLiveTheRupsterlifeProps> = ({ isMobile }) => (
   <section className={styles.section} aria-label="What's it like to live the Rupester life section">
     <div className={styles.container}>
       {/* Main Title */}
@@ -13,9 +17,9 @@ const WhatItsLikeToLiveTheRupsterlife: React.FC = () => (
               { 
                 text: "What's it like to live", 
                 fontFamily: 'gilroy', 
-                fontWeight: 700,
-                fontSize: '89px',
-                style: { lineHeight: '99px', letterSpacing: '-4px' }
+                fontWeight: 700,                
+                fontSize: !isMobile ? '89px': '50px',
+                style: { lineHeight: !isMobile ? '99px' : '59px', letterSpacing: '-4px' }
               }
             ]}
           />
@@ -26,23 +30,23 @@ const WhatItsLikeToLiveTheRupsterlife: React.FC = () => (
                 text: "the ", 
                 fontFamily: 'gilroy', 
                 fontWeight: 700,
-                fontSize: '89px',
-                style: { lineHeight: '99px', letterSpacing: '-4px' }
+                fontSize: !isMobile ? '89px': '50px',
+                style: { lineHeight: !isMobile ? '99px' : '59px', letterSpacing: '-4px' }
               },
               { 
                 text: "Rupester", 
                 fontFamily: 'albra', 
                 fontWeight: 500,
                 fontStyle: 'italic',
-                fontSize: '89px',
-                style: { lineHeight: '99px', letterSpacing: '-4px' }
+                fontSize: !isMobile ? '89px': '50px',
+                style: { lineHeight: !isMobile ? '99px' : '59px', letterSpacing: '-4px' }
               },
               { 
                 text: " life?", 
                 fontFamily: 'gilroy', 
                 fontWeight: 700,
-                fontSize: '89px',
-                style: { lineHeight: '99px', letterSpacing: '-4px' }
+                fontSize: !isMobile ? '89px': '50px',
+                style: { lineHeight: !isMobile ? '99px' : '29px', letterSpacing: '-4px' }
               }
             ]}
           />
