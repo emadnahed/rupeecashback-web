@@ -204,7 +204,7 @@
 @media (max-width: 480px) {
   .card {
     padding: 8vh 10px;
-    margin: 120px 0px;    
+    margin: 130px 0px;    
     height: 60%;
     width: 100%;
     border-radius: 15px;        
@@ -225,27 +225,22 @@
 
 @media (max-width: 320px) {
   .card {
-    padding: 40px 10px;
-    min-height: 100vh;
+    padding: 8vh 10px;
+    margin: 130px 0px;    
+    height: 60%;
+    width: 100%;
+    border-radius: 15px;        
   }
-
   .titleLine {
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 32px;
+    text-align: center;
+    line-height: 45%;
   }
-
   .subtitle {
-    font-size: 11px;
-    line-height: 15px;
+    font-size: 15px;    
+    text-align: center;
   }
-
-  .imageWrapper {
-    max-width: 180px;
-    height: auto;
-  }
-
   .image {
-    max-width: 150px;
-    height: auto;
+    max-width: 45%;
   }
 } 

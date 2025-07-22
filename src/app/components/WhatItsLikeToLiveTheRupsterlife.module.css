@@ -202,26 +202,27 @@
   }
 
   .cardsGrid {
-    display: flex; /* Changed to flexbox */
-    flex-direction: column; /* Stack cards vertically */
-    gap: 20px; /* Adjusted gap */
+    display: grid; /* Reverted to grid for 2-column layout */
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 15px; /* Adjusted gap */
     width: 100%;
-    align-items: center; /* Center cards horizontally */
+    max-width: 500px; /* Limit grid width on mobile */
+    margin: 0 auto; /* Center the grid */
   }
 
   .card {
-    width: 100%; /* Ensure cards take full width when stacked */
-    max-width: 400px; /* Limit max width for readability */
-    padding: 20px;
+    width: auto; /* Allow grid to manage width */
+    max-width: none; /* Remove max-width on individual cards */
+    padding: 15px; /* Adjusted padding */
     min-height: auto;
     border-radius: 15px;
   }
   
   .wideCard {
-    width: 100%; /* Ensure wide card takes full width */
-    max-width: 400px; /* Limit max width for readability */
-    padding: 20px;
-    grid-column: auto; /* Reset grid column property */
+    grid-column: 1 / -1; /* Make wide card span both columns */
+    width: auto; /* Allow grid to manage width */
+    max-width: none; /* Remove max-width on individual cards */
+    padding: 15px; /* Adjusted padding */
   }
 
   .iconWrapper {
@@ -234,27 +235,27 @@
   }
 
   .cardTitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Adjusted font size for mobile cards */
     line-height: 1.2;
     margin-bottom: 15px;
   }
 
   .cardButton, .learnMoreButton {
-    padding: 10px 20px;
-    font-size: 0.85rem;
-    border-radius: 25px;
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    border-radius: 20px;
   }
 
   .reservedTitle {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
   }
 
   .reservedDescription {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     line-height: 1.4;
     margin-bottom: 15px;
-    max-width: 350px;
+    max-width: 300px; /* Adjusted for mobile */
   }
 }
 
@@ -263,32 +264,8 @@
     padding: 6vh 20px;
   }
   .title {
-    font-size: 2.2rem;
-    margin-top: 20px;
-  }
-  .cardsGrid {
-    gap: 15px;
-  }
-  .card, .wideCard {
-    padding: 15px;
-  }
-  .cardTitle {
-    font-size: 1rem;
-  }
-  .iconImage {
-    width: 40px;
-    height: 40px;
-  }
-} 
-
-
-@media (max-width: 375px) {
-  .section {
-    padding: 6vh 20px;
-  }
-  .title {
-    font-size: 2.5rem;
-    /* margin-top: 30px; */
+    font-size: 2rem;
+    margin-top: 15px;
   }
   .cardsGrid {
     gap: 10px;
@@ -297,11 +274,45 @@
     padding: 10px;
   }
   .cardTitle {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
   .iconImage {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+  }
+  .reservedTitle {
+    font-size: 1.2rem;
+  }
+  .reservedDescription {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .section {
+    padding: 5vh 15px;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  .cardsGrid {
+    gap: 8px;
+  }
+  .card, .wideCard {
+    padding: 8px;
+  }
+  .cardTitle {
+    font-size: 0.8rem;
+  }
+  .iconImage {
+    width: 35px;
+    height: 35px;
+  }
+  .reservedTitle {
+    font-size: 1rem;
+  }
+  .reservedDescription {
+    font-size: 0.65rem;
   }
 } 
 
