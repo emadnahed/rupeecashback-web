@@ -1,8 +1,8 @@
 .footer {
-  color: #ffffff;
+  background: #fff;
+  color: #000;
   padding: 40px;
   width: 100vw;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +34,7 @@
 .logo {
   font-size: 2.5rem;
   line-height: 1;
-  color: #ffffff;
+  color: #000;
   letter-spacing: -0.01em;
 }
 
@@ -47,7 +47,7 @@
 .sectionTitle {
   font-size: 1.5rem;
   margin: 0 0 32px 0;
-  color: #ffffff;
+  color: #000;
   font-weight: 500;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .link {
-  color: #cccccc;
+  color: #333;
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1.4;
@@ -69,7 +69,7 @@
 }
 
 .link:hover {
-  color: #ffffff;
+  color: #000;
   text-decoration: underline;
 }
 
@@ -88,7 +88,7 @@
 .contactItem {
   font-size: 1.125rem;
   line-height: 1.5;
-  color: #cccccc;
+  color: #333;
 }
 
 /* QR Code Section */
@@ -102,10 +102,11 @@
 
 /* Copyright Section */
 .copyrightSection {
-  border-top: 1px solid #333333;
+  border-top: 1px solid #e0e0e0;
   margin-top: 60px;
   padding: 32px 0;
   width: 100%;
+  background: #fff;
 }
 
 .copyrightContainer {
@@ -117,7 +118,7 @@
 
 .copyrightContainer span {
   font-size: 0.875rem;
-  color: #888888;
+  color: #888;
   line-height: 1.4;
 }
 

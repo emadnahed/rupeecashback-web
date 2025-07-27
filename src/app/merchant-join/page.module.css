@@ -1,26 +1,112 @@
-.page {
-  min-height: 100vh;
+.completeMerchantpage {
+  /* min-height: 100vh; */
+  /* background: #fff; */
+  /* color: #000; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.problemSection {
+  position: relative;
+  width: 100vw;
+  min-height: 213px;
+  background: #000;
+}
+
+.problemSection.light {
   background: #fff;
   color: #000;
 }
 
-.heroSection {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
+.problemSection + .problemSection {
+  padding-top: 0;
+}
+
+/* New Hero with Handshake Section */
+
+
+.cardsContainer{
+  background: #000;
+  width: 100%;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 80px 48px 40px;
-  background: #fff;
+  justify-content: center;
 }
 
-.heroContent {
-  max-width: 800px;
+.heroHandshakeImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.heroOverlayContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  margin-bottom: 60px;
   z-index: 2;
-  position: relative;
+  max-width: 900px;
+  width: 90%;
+  padding: 0 20px;
+}
+
+.heroOverlayTitle {
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 32px;
+  color: #000;
+  font-family: 'Gilroy', 'Arial', sans-serif;
+}
+
+.heroOverlaySubtitle {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666;
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+/* Problem Section Styles */
+.problemSectionContainer {
+  background-color: #000;
+  width: 100%;
+  padding: 80px 48px;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.problemContent {
+  max-width: 1000px;
+  width: 100%;
+  text-align: left;
+}
+
+.problemMainTitle {
+  font-size: 4rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #fff;
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  margin: 0 0 40px 0;
+}
+
+.problemDescription {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #fff;
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-weight: 300;
+  margin: 0;
 }
 
 .heroTitle {
@@ -41,27 +127,26 @@
   margin-bottom: 40px;
 }
 
-.heroImage {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  width: 100%;
-  height: 60%;
-  object-fit: cover;
-  object-position: center bottom;
-}
-
 .problemSection {
-  position: absolute;
-  bottom: 40px;
-  left: 48px;
-  z-index: 2;
+  align-self: flex-start;
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 0 48px;
 }
 
-.problemTitle {
-  font-size: 3rem;
+.problemSubtitle {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #fff;
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #ccc; /* Slightly lighter color for 'Problem 1' */
+}
+
+.customerRetentionTitle {
+  font-size: 2.5rem;
   font-weight: 400;
   font-style: italic;
   color: #fff;
@@ -69,53 +154,550 @@
   margin: 0;
 }
 
-.emphasizedText {
-  font-style: italic;
+.bottomContentWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  margin-top: auto; /* Push this wrapper to the bottom */
+  max-width: 800px; /* Constrain width to match hero content */
+  padding: 0 48px; /* Apply horizontal padding to the wrapper */
+  margin-bottom: 40px;
+  z-index: 2; /* Ensure text is above the background image */
 }
 
-/* Responsive Design */
+.problemTitle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  padding: 0;
+  gap: 12px;
+}
+
+.problemTitleItalic {
+  font-family: 'Albra', Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 89px;
+  line-height: 1.1;
+  color: #fff;
+  margin-right: 12px;
+  letter-spacing: 0px;
+}
+
+.problemTitleBold {
+  font-family: 'Gilroy-Bold', 'Poppins', 'Montserrat', 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 89px;
+  line-height: 1.1;
+  letter-spacing: -4px;
+  color: #fff;
+}
+
+.problemDesc {
+  max-width: 900px;
+  font-family: 'Gilroy-Medium', 'Poppins', 'Montserrat', 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -0.5px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  padding: 0 8px;
+}
+
+.problemDescItalic {
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: inherit;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.problemHeader {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto 56px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- PROBLEM 1: CUSTOMER RETENTION --- */
+.problemOneSection {
+  background: #000;
+  color: #fff;
+  width: 100%;
+  padding: 44px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.problemOneContent {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto 56px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 44px;
+}
+
+.problemOneLabel {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.problemOneLabelItalic {
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.problemOneTitle {
+  font-family: 'Montserrat', 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  display: inline-block;
+}
+
+.problemOneTitleItalic {
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.45rem;
+  margin-left: 2px;
+}
+
+.problemOneDesc {
+  font-size: 0.97rem;
+  color: #bdbdbd;
+  margin-bottom: 0;
+  margin-top: 8px;
+  text-align: left;
+  opacity: 0.8;
+}
+
+.heroImage {
+  width: 100%;
+  height: 30%;
+  position: relative;
+  top: 220;
+  left: 0;
+  /* object-fit: cover;
+  object-position: center; */
+}
+
+/* .problemOneImage { width: 200px; height: 140px; background: #eee; border-radius: 12px; } */
+
+.heroSection {
+  min-height: calc(100vh - 80px); /* Adjust if header is not 80px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  width: 100%;
+  padding: 0;
+}
+
+.heroContent {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.heroTitle {
+  font-family: 'Gilroy', 'Albra', serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #000;
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.heroTitleMain {
+  font-family: 'Montserrat', 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 3.8rem;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  color: #111;
+  display: block;
+}
+
+
+.heroTitleItalic {
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 1.08;
+  color: #111;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+
+.heroSubtitleMain {
+  margin-top: 18px;
+  font-family: 'Montserrat', 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  color: #222;
+}
+
+
+.heroSubtitleItalic {
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-style: italic;
+  text-align: center;
+}
+
+.handshakeImageWrapper {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.handshakeImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%; /* Center the handshake */
+  z-index: 2;
+  pointer-events: none;
+}
+
 @media (max-width: 900px) {
+  .handshakeSection {
+    height: 60vw;
+    min-height: 220px;
+    max-height: 320px;
+  }
   .heroSection {
-    padding: 60px 32px 30px;
-  }
-  
-  .heroTitle {
-    font-size: 3rem;
-  }
-  
-  .heroSubtitle {
-    font-size: 1rem;
-  }
-  
-  .problemTitle {
-    font-size: 2.2rem;
-  }
-  
-  .problemSection {
-    left: 32px;
-    bottom: 30px;
+    padding-bottom: 60px;
   }
 }
 
 @media (max-width: 600px) {
+  .handshakeSection {
+    height: 80vw;
+    min-height: 140px;
+    max-height: 200px;
+  }
   .heroSection {
-    padding: 40px 20px 20px;
+    padding-bottom: 32px;
   }
-  
-  .heroTitle {
-    font-size: 2.5rem;
-  }
-  
-  .heroSubtitle {
-    font-size: 0.9rem;
-  }
-  
-  .problemTitle {
-    font-size: 1.8rem;
-  }
-  
-  .problemSection {
-    left: 20px;
-    bottom: 20px;
-  }
-} 
+}
+
+.handshakeSection {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 48vw;
+  min-height: 400px;
+  max-height: 520px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #fff 50%, #000 50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.problemSection {
+  background: #000;
+  overflow: visible;
+  color: #fff;
+  width: 100%;
+  min-height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 80px 0;
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+}
+
+
+
+
+/* new fonts */
+
+/* HERO TITLE TYPOGRAPHY CLASSES */
+
+/* Albra Medium Italic 89px - Hero Title Italic */
+.heroTitleAlbraLargeItalic {
+  font-family: 'Albra', serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 89px;
+  line-height: 55px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+/* Gilroy Bold 89px - Hero Title Main */
+.heroTitleGilroyLargeBold {
+  font-family: 'Gilroy-Bold', 'Gilroy', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 89px;
+  line-height: 55px;
+  letter-spacing: -4px;
+  text-align: center;
+}
+
+/* SUBTITLE TYPOGRAPHY CLASSES */
+
+/* Albra Medium Italic 24px - Small Subtitle Italic */
+.subtitleAlbraSmallItalic {
+  font-family: 'Albra', serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: -0.8px;
+}
+
+/* Gilroy Medium 55px - Large Subtitle Main */
+.subtitleGilroyLargeMedium {
+  font-family: 'Gilroy-Medium', 'Gilroy', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 52px;
+  letter-spacing: -0.8px;
+}
+
+/* Albra Medium Italic 55px - Large Subtitle Italic */
+.subtitleAlbraLargeItalic {
+  font-family: 'Albra', serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 55px;
+  line-height: 52px;
+  letter-spacing: -0.8px;
+}
+
+/* BODY TEXT TYPOGRAPHY CLASSES */
+
+/* Gilroy Medium 21px - Body Text Main */
+.bodyTextGilroyMedium {
+  font-family: 'Gilroy-Medium', 'Gilroy', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 29px;
+  letter-spacing: -0.8px;
+}
+
+/* Albra Medium Italic 21px - Body Text Italic */
+.bodyTextAlbraMediumItalic {
+  font-family: 'Albra', serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 21px;
+  line-height: 29px;
+  letter-spacing: -0.8px;
+}
+
+/* RESPONSIVE VARIANTS - TABLET */
+
+/* Tablet Hero Title Classes */
+.heroTitleAlbraLargeItalicTablet {
+  font-family: 'Albra', serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 70px;
+  line-height: 45px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.heroTitleGilroyLargeBoldTablet {
+  font-family: 'Gilroy-Bold', 'Gilroy', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 45px;
+  letter-spacing: -3px;
+  text-align: center;
+}
+
+/* Tablet Subtitle Classes */
+.subtitleAlbraSmallItalicTablet {
+  font-family: 'Albra', serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.6px;
+}
+
+.bodyTextGilroyMediumTablet {
+  font-family: 'Gilroy-Medium', 'Gilroy', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.6px;
+}
+
+.bodyTextAlbraMediumItalicTablet {
+  font-family: 'Albra', serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.6px;
+}
+
+/* RESPONSIVE VARIANTS - MOBILE */
+
+/* Mobile Hero Title Classes */
+.heroTitleAlbraLargeItalicMobile {
+  font-family: 'Albra', serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.heroTitleGilroyLargeBoldMobile {
+  font-family: 'Gilroy-Bold', 'Gilroy', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 30px;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+/* Mobile Subtitle Classes */
+.subtitleAlbraSmallItalicMobile {
+  font-family: 'Albra', serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+}
+
+.bodyTextGilroyMediumMobile {
+  font-family: 'Gilroy-Medium', 'Gilroy', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+}
+
+.bodyTextAlbraMediumItalicMobile {
+  font-family: 'Albra', serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+}
+
+/* SPECIALIZED TYPOGRAPHY CLASSES */
+
+/* Problem Section Title */
+.problemTitleAlbraItalic {
+  font-family: 'Albra', serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 55px;
+  line-height: 52px;
+  letter-spacing: -0.8px;
+  text-align: left;
+  color: #fff;
+}
+
+/* Problem Section Description */
+.problemDescriptionGilroy {
+  font-family: 'Gilroy-Medium', 'Gilroy', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 29px;
+  letter-spacing: -0.8px;
+  color: #fff;
+}
+
+/* Emphasized Text within Problem Description */
+.problemDescriptionEmphasisAlbra {
+  font-family: 'Albra', serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 21px;
+  line-height: 29px;
+  letter-spacing: -0.8px;
+  color: #fff;
+}
+
+/* UTILITY CLASSES FOR ALIGNMENT */
+
+.textAlignCenter {
+  text-align: center;
+}
+
+.textAlignLeft {
+  text-align: left;
+}
+
+.textAlignRight {
+  text-align: right;
+}
+
+/* COLOR VARIANTS */
+
+.textColorBlack {
+  color: #000;
+}
+
+.textColorWhite {
+  color: #fff;
+}
+
+.textColorGray {
+  color: #666;
+}
+
+.textColorLightGray {
+  color: #ccc;
+}

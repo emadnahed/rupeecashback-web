@@ -1,0 +1,170 @@
+.section {
+  padding: 60px 0 80px 0;
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.qrSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.qrCode {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qrText {
+  text-align: left;
+}
+
+.joinText {
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.revolutionText {
+  font-family: 'Albra', serif;
+  font-style: italic;
+  font-size: 24px;
+  color: #000;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.brandSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.divider {
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-size: 32px;
+  color: #ccc;
+  font-weight: 300;
+}
+
+.merchantText {
+  display: flex;
+  align-items: center;
+}
+
+.merchants {
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+}
+
+.tagline {
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.taglineItalic {
+  font-family: 'Albra', serif;
+  font-style: italic;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+  
+  .container {
+    padding: 0 20px;
+  }
+  
+  .qrSection {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  
+  .qrText {
+    text-align: center;
+  }
+  
+  .brandSection {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .divider {
+    display: none;
+  }
+  
+  .merchants {
+    font-size: 24px;
+  }
+  
+  .joinText {
+    font-size: 16px;
+  }
+  
+  .revolutionText {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .qrCode {
+    padding: 16px;
+  }
+  
+  .merchants {
+    font-size: 20px;
+  }
+  
+  .tagline {
+    font-size: 14px;
+  }
+  
+  .joinText {
+    font-size: 14px;
+  }
+  
+  .revolutionText {
+    font-size: 18px;
+  }
+}
