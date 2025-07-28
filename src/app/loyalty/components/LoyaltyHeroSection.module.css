@@ -17,28 +17,29 @@
   align-items: center;
   justify-content: center;
   flex: 1 1 auto;
-  margin-top: 7vh;
-  margin-bottom: 7vh;
+  margin-top: 10vh; /* Adjusted based on Figma */
+  margin-bottom: 10vh; /* Adjusted based on Figma */
+  max-width: 1200px; /* Added max-width for content */
+  width: 100%;
+  padding: 0 1rem; /* Add some horizontal padding */
 }
 
-.headlineTop {
-  font-family: 'Gilroy', 'Inter', 'Poppins', 'Montserrat', Arial, sans-serif;
-  font-weight: 700;
-  font-size: 5vw;
-  color: #fff;
+.title {
   margin: 0;
-  line-height: 1;
-  font-style: normal;
-}
-
-.headlineBottom {
-  font-family: 'Gilroy', 'Inter', 'Poppins', 'Montserrat', Arial, sans-serif;
-  font-weight: 700;
-  font-size: 5vw;
-  color: #fff;
-  margin: 0;
-  font-style: italic;
   line-height: 1.1;
+  text-align: center;
+  font-family: 'Gilroy', sans-serif; /* Ensure font-family is set */
+  font-weight: 700; /* Default for bold parts */
+  color: #fff;
+}
+
+.description {
+  max-width: 800px;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.4;
+  margin-top: 1.5rem; /* Spacing from title */
 }
 
 .bottomText {
@@ -49,134 +50,61 @@
   align-items: center;
   width: 100%;
   z-index: 2;
-}
-
-.bottomLine {
-  font-size: 1.3vw;
-  color: #fff;
-  margin: 0;
-  font-family: 'Gilroy', 'Inter', 'Poppins', 'Montserrat', Arial, sans-serif;
-  font-weight: 400;
-  line-height: 1.4;
-}
-
-@media (max-width: 900px) {
-  .headlineTop, .headlineBottom {
-    font-size: 7vw;
-  }
-  .bottomLine {
-    font-size: 2vw;
-  }
-}
-
-@media (max-width: 450px) {
-  .heroCenterContent {
-    margin-top: 4vh;
-    margin-bottom: 4vh;
-  }
-  .headlineTop, .headlineBottom {
-    font-size: 10vw;
-  }
-  .bottomLine {
-    font-size: 3.5vw;
-  }
-}
-
-
-.container {
-  max-width: 1200px;
-  width: 100%;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.1;
-  text-align: center;
-}
-
-.description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  max-width: 800px;
-  font-family: 'Gilroy', 'Inter', 'Poppins', 'Montserrat', Arial, sans-serif;
-  font-weight: 400;
-  font-size: 1.2vw;
-  color: #fff;
-}
-
-.descriptionLine {
-  margin: 0;
-  line-height: 1.4;
-  font-family: 'Gilroy', 'Inter', 'Poppins', 'Montserrat', Arial, sans-serif;
-  font-weight: 400;
-  font-size: 1.2vw;
-  color: #fff;
-}
-
-.bottomText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  max-width: 700px;
-  margin-top: 2.5rem;
-  margin-bottom: 0.5rem;
+  max-width: 700px; /* Max width for bottom text */
+  padding: 0 1rem; /* Add some horizontal padding */
 }
 
 .bottomLine {
   margin: 0;
   line-height: 1.4;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
+  color: #fff;
 }
 
-/* Mobile Styles */
-@media (max-width: 450px) {
-  .heroSection {
-    padding: 1rem;
-    min-height: 80vh;
-  }
-
-  .content {
-    gap: 2rem;
-  }
-
+/* Desktop adjustments */
+@media (min-width: 1024px) {
   .title {
-    line-height: 1.2;
+    font-size: 5rem; /* 80px */
   }
-
   .description {
-    max-width: 100%;
+    font-size: 1.25rem; /* 20px */
   }
-
-  .bottomText {
-    max-width: 100%;
-    margin-top: 1.5rem;
+  .bottomLine {
+    font-size: 1.125rem; /* 18px */
   }
 }
 
 /* Tablet Styles */
 @media (max-width: 768px) {
-  .heroSection {
-    padding: 1.5rem;
+  .heroCenterContent {
+    margin-top: 8vh;
+    margin-bottom: 8vh;
   }
-
-  .content {
-    gap: 2.5rem;
+  .title {
+    font-size: 3.5rem; /* ~56px */
   }
-
   .description {
-    max-width: 600px;
+    font-size: 1.1rem; /* ~18px */
   }
+  .bottomLine {
+    font-size: 1rem; /* 16px */
+  }
+}
 
-  .bottomText {
-    max-width: 500px;
+/* Mobile Styles */
+@media (max-width: 450px) {
+  .heroCenterContent {
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+  }
+  .title {
+    font-size: 3rem; /* 48px */
+  }
+  .description {
+    font-size: 1rem; /* 16px */
+  }
+  .bottomLine {
+    font-size: 0.875rem; /* 14px */
   }
 }

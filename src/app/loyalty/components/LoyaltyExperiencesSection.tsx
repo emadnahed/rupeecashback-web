@@ -56,7 +56,7 @@ const LoyaltyExperiencesSection: React.FC<LoyaltyExperiencesSectionProps> = ({ i
         </div>
         <div className={styles.descriptionWrapper}>
           <p className={styles.description}>
-            Built for <span style={{ fontStyle: 'italic', fontWeight: 700 }}>everyday users</span>, <span style={{ fontStyle: 'italic', fontWeight: 700 }}>growing merchants</span>, and <span style={{ fontStyle: 'italic', fontWeight: 700 }}>ambitious platforms</span>.<br/>
+            Built for <span className={styles.descriptionItalicBold}>everyday users</span>, <span className={styles.descriptionItalicBold}>growing merchants</span>, and <span className={styles.descriptionItalicBold}>ambitious platforms</span>.<br/>
             Whether you're paying bills, rewarding customers, or verifying cards, RupeeStack gives you the tools to do it better, safer, and at scale.
           </p>
         </div>

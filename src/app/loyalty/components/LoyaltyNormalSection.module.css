@@ -5,13 +5,11 @@ Add to your global CSS (e.g. styles/globals.css or _app.tsx):
 
 .normalSection {
   width: 100%;
-  background: #000;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5rem 1rem;
-  min-height: 40vh;
 }
 
 .imageWrapper {

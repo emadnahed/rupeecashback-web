@@ -6,7 +6,7 @@ interface LoyaltySecureCoreSectionProps {
   isMobile: boolean;
 }
 
-const LoyaltySecureCoreSection: React.FC<LoyaltySecureCoreSectionProps> = ({ isMobile }) => {
+export const LoyaltySecureCoreSection: React.FC<LoyaltySecureCoreSectionProps> = ({ isMobile }) => {
   return (
     <section className={styles.secureCoreSection}>
       <div className={styles.container}>
@@ -14,7 +14,10 @@ const LoyaltySecureCoreSection: React.FC<LoyaltySecureCoreSectionProps> = ({ isM
           <span className={styles.bold}>The secure core of</span><br />
           <span className={styles.serifItalic}>digital transactions.</span>
         </h2>
-
+        <p className={styles.description}>
+          A fintech company reimagining <span className={styles.italic}>how people interact with money</span>.
+          We build seamless, intuitive systems that simplify payments, rewards, and digital finance effortless, accessible, and future-ready.
+        </p>
       </div>
     </section>
   );

@@ -11,11 +11,11 @@ const LoyaltyMoneyBackSection: React.FC<LoyaltyMoneyBackSectionProps> = ({ isMob
     <section className={styles.moneyBackSection}>
       <div className={styles.textBlock}>
         <div className={styles.headingBlock}>
-          <span className={styles.seamless}>Seamless</span>
-          <span className={styles.payouts}>payouts.</span>
+          <span className={styles.seamless}>That money</span>
+          <span className={styles.payouts}>back feeling.</span>
         </div>
         <p className={styles.subtext}>
-          Fast, <span className={styles.italic}>secure</span>, and <span className={styles.italic}>scalable</span> payment solutions for businesses of <span className={styles.italic}>all sizes</span>.
+          Smart platform that rewards customers with cashback for shopping at partnered stores.
         </p>
       </div>
       <div className={styles.laptopBlock}>
@@ -24,7 +24,7 @@ const LoyaltyMoneyBackSection: React.FC<LoyaltyMoneyBackSectionProps> = ({ isMob
           alt="Rupee App Mockup"
           className={styles.mockupImage}
           width={300}
-          height={100}
+          height={300}
           priority
         />
       </div>

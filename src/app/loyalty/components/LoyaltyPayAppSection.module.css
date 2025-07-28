@@ -2,11 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 60vh;
-  background: #000;
   color: #fff;
   padding: 6rem 1rem;
-  gap: 13rem;
+  gap: 6rem; /* Reduced gap from 13rem to 6rem */
 }
 
 .payAppSection > .mockupContainer,
@@ -68,11 +66,11 @@ Add to your global CSS (e.g. styles/globals.css or _app.tsx):
 */
 
 .payAppSection {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: 'Gilroy', sans-serif;
 }
 
 .headline {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-size: 2.8rem;
   font-weight: 800;
   line-height: 1.1;
@@ -80,7 +78,7 @@ Add to your global CSS (e.g. styles/globals.css or _app.tsx):
   letter-spacing: -0.02em;
 }
 .headline em {
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-family: 'Albra', serif;
   font-style: italic;
   font-size: 2.8rem;
   font-weight: 700;
@@ -88,23 +86,23 @@ Add to your global CSS (e.g. styles/globals.css or _app.tsx):
 }
 .headline strong {
   font-weight: 800;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: 'Gilroy', sans-serif;
 }
 .subheadline {
   font-size: 1.15rem;
   color: #fff;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-weight: 400;
   margin-top: 0.8rem;
   line-height: 1.5;
 }
 .subheadline .italic {
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-family: 'Albra', serif;
   font-style: italic;
 }
 .subheadline .bold {
   font-weight: 700;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: 'Gilroy', sans-serif;
 }
 
 @media (max-width: 768px) {

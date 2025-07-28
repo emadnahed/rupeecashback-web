@@ -7,7 +7,7 @@ import LoyaltyHeroSection from "./components/LoyaltyHeroSection";
 import LoyaltyExperiencesSection from "./components/LoyaltyExperiencesSection";
 import LoyaltyPayAppSection from './components/LoyaltyPayAppSection';
 import LoyaltyMoneyBackSection from './components/LoyaltyMoneyBackSection';
-import LoyaltySecureCoreSection from './components/LoyaltySecureCoreSection';
+import { LoyaltySecureCoreSection } from './components/LoyaltySecureCoreSection';
 import LoyaltyNormalSection from './components/LoyaltyNormalSection';
 
 export default function Loyalty() {
@@ -36,7 +36,7 @@ export default function Loyalty() {
       <LoyaltyPayAppSection isMobile={isMobile} />
       <LoyaltyMoneyBackSection isMobile={isMobile} />
       <LoyaltySecureCoreSection isMobile={isMobile} />
-      {/* <LoyaltyNormalSection isMobile={isMobile} /> */}
+      <LoyaltyNormalSection isMobile={isMobile} />
       <Footer />
     </div>
   );

@@ -89,28 +89,18 @@ const LoyaltyHeroSection: React.FC<LoyaltyHeroSectionProps> = ({ isMobile }) => 
 
   return (
     <section className={styles.heroSection}>
-      <div className={styles.container}>
-        <div className={styles.content}>
-          <div className={styles.heroCenterContent}>
-            <h1 className={styles.title}>
-              <TextSpanning spans={titleSpans} />
-            </h1>
-            <div className={styles.description}>
-              <p className={styles.descriptionLine}>
-                <TextSpanning spans={descriptionSpans} />
-              </p>
-            </div>
-          </div>
-
-          <div className={styles.bottomText}>
-            <p className={styles.bottomLine}>
-              <TextSpanning spans={bottomTextSpans} />
-            </p>
-            <p className={styles.bottomLine}>
-              <TextSpanning spans={bottomSecondLineSpans} />
-            </p>
-          </div>
+      <div className={styles.heroCenterContent}>
+        <h1 className={styles.title}>
+          <TextSpanning spans={titleSpans} />
+        </h1>
+        <div className={styles.description}>
+          <TextSpanning spans={descriptionSpans} />
         </div>
+      </div>
+
+      <div className={styles.bottomText}>
+        <TextSpanning spans={bottomTextSpans} />
+        <TextSpanning spans={bottomSecondLineSpans} />
       </div>
     </section>
   );
